@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-5 text-corporativo">
-            <Link href="/about">Nosotros</Link>
+            <Link href="/nosotros">Nosotros</Link>
           </li>
           <li className="p-5 text-corporativo">
             <Link href="/portfolio">Servicios</Link>

@@ -12,13 +12,15 @@ const AboutPage = () => {
       <Navbar />
       <div className=" w-screen h-full bg-gradient-to-b from-white via-gradient to-white ">
         <div className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
-          <h1 className="uppercase text-white text-7xl ">Nosotros</h1>
-          <h2 className="uppercase text-white text-3xl ">
+          <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl">
+            Nosotros
+          </h1>
+          <h2 className="uppercase text-white min-[320px]:text-xl md:text-3xl">
             Mision, Vision y Valores
           </h2>
         </div>
-        <div className="w-full flex justify-between items-center gap-20 mt-8 px-20">
-          <div className="w-7/12 flex flex-col justify-center items-start p-2 gap-4">
+        <div className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+          <div className="flex min-[320px]:w-full flex-col justify-center items-center p-2 gap-4 md:w-7/12 md:items-start">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Misión
             </h3>
@@ -46,15 +48,15 @@ const AboutPage = () => {
               desean: ¡el éxito!
             </p>
           </div>
-          <div className="w-5/12 flex flex-col justify-center items-center p-2 ">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-5/12">
             <Image src={AboutImg} alt="AboutImg" />
           </div>
         </div>
-        <div className="w-full flex justify-between items-center gap-20 mt-8 px-20">
-          <div className="w-5/12 flex flex-col justify-center items-center p-2 ">
+        <div className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48 ">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 ">
             <Image src={AboutImg} alt="AboutImg" />
           </div>
-          <div className="w-7/12 flex flex-col justify-center items-start p-2 gap-4">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 gap-4">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Visión
             </h3>
@@ -80,10 +82,10 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex justify-between items-center gap-20 mt-8 px-20">
-          <div className="w-8/12 flex flex-col justify-center items-start p-2 gap-4">
+        <div className="min-[320px]:w-full md:w-8/12 flex flex-col justify-between items-center gap-20 mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48">
+          <div className="min-[320px]:flex flex-col justify-center items-center p-2 gap-4 md:items-start">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
-              Visión
+              Valores
             </h3>
             <div className="bg-corporativo w-full h-2 border-1 border-corporativo" />
             <p className="text-sm text-justify leading-7">
@@ -96,8 +98,8 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-auto flex justify-center items-center mt-8 px-20">
-          <div className="w-6/12 flex flex-col justify-center items-end p-2 ">
+        <div className="min-[320px]:w-full h-auto flex flex-col justify-center items-center mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 md:items-end">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Creamos
             </h3>
@@ -108,7 +110,7 @@ const AboutPage = () => {
               Para ti
             </h3>
           </div>
-          <div className="w-6/12 flex flex-col justify-center items-center p-2 gap-4">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 gap-4">
             <Image src={ValoresImg} alt="AboutImg" />
           </div>
         </div>

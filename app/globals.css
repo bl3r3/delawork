@@ -14,3 +14,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.background-img-custom-services {
+  background-image: url("../public/business-peoplepng.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

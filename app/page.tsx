@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Navbar />
       {/* {Hero} */}
-      <div className="h-screen w-screen flex flex-col ">
-        <div className="flex items-center justify-start gap-6 mt-32">
+      <div className="h-screen w-screen flex flex-col">
+        <div className="flex items-center justify-start gap-6 mt-32  px-48">
           <div className="flex flex-col  itmes-center justify-start px-10 gap-2">
             <div className="bg-gradient p-2 w-80 shadow-lg">
               <h1 className="text-corporativo text-8xl font-bold">¡Hola!</h1>
@@ -30,9 +30,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex bg-gradient mt-4">
-          <div className="flex w-6/12 flex-col itmes-center justify-center px-10 gap-2 ">
-            <p className="text-justify">
+        <div className="flex mt-4">
+          <div className="flex w-6/12 flex-col itmes-center justify-center px-48 gap-2 bg-gradient">
+            <p className="text-justify ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
               quis quod et deserunt doloribus aliquid ipsum iure quos, est
               laborum alias animi, nam quia odit, harum corporis saepe ducimus!
@@ -65,8 +65,8 @@ export default function Home() {
 
       {/* {Servicios} */}
 
-      <div className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient   items-center justify-start gap-10 px-10">
-        <div className="flex w-screen px-10">
+      <div className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient   items-center justify-start gap-10 px-48">
+        <div className="flex w-screen px-48">
           <div className="bg-gradient p-2 w-75 shadow-lg">
             <h3 className="text-corporativo text-4xl ">Servicios</h3>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-screen px-10 mb-12">
+        <div className="flex w-screen px-48 mb-12">
           <div className="bg-white p-2 w-75 shadow-2xl">
             <h3 className="text-corporativo text-4xl">¿QUIERES EMPRENDER?</h3>
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* {Servicios end} */}
 
-      <div className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 px-20  h-96">
+      <div className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 px-48  h-96 md:h-6/6">
         <h3 className="text-white text-3xl text-center">
           ¿Alguna vez has tenido una idea para un proyecto o negocio, pero no
           has sabido cómo hacerla realidad?
