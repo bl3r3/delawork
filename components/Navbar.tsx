@@ -49,13 +49,13 @@ const Navbar = () => {
             <Link href="/nosotros">Nosotros</Link>
           </li>
           <li className="p-5 text-corporativo">
-            <Link href="/portfolio">Servicios</Link>
+            <Link href="/servicios">Servicios</Link>
           </li>
           <li className="p-5 text-corporativo">
-            <Link href="/contact">Emprendedores</Link>
+            <Link href="/emprendedores">Emprendedores</Link>
           </li>
           <li className=" p-1 text-corporativo">
-            <Link href="/contact">
+            <Link href="/contacto">
               <button className="text-corporativo bg-white rounded-3xl border-2 border-corporativo p-3">
                 Contacto
               </button>
