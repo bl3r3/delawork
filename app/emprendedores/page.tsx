@@ -15,13 +15,10 @@ const EmprendedoresPage = () => {
             Emprendedores
           </h1>
         </div>
-        <div className="h-fit w-screen flex flex-col">
+        <div className="min-[320px]:w-full h-fit w-screen flex flex-col">
           <div className="flex mt-4">
-            <div
-              className="flex w-7/12 flex-col itmes-start justify-start pl-48
-           pr-12 gap-4"
-            >
-              <div className="flex items-start justify-start gap-6 mt-16">
+            <div className="min-[320px]:w-full min-[320px]:p-12 flex w-7/12 flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
+              <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
                 <div className="flex flex-col itmes-start justify-start gap-2">
                   <div className="bg-gradient p-2 w-56 shadow-lg">
                     <h1 className="text-corporativo text-4xl font-bold">
@@ -69,8 +66,7 @@ const EmprendedoresPage = () => {
                 Es el momento de empezar a invertir en ti mismo…
               </p>
             </div>
-
-            <div className="flex w-5/12 flex-col itmes-center justify-center">
+            <div className="flex w-5/12 flex-col itmes-center justify-center  img-emprendedores">
               <Image
                 src={FotoMain}
                 alt="Picture of the author"
@@ -79,9 +75,9 @@ const EmprendedoresPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-screen h-fit flex justify-center items-center p-4 gap-16 mt-24 mb-24">
-          <div className="flex flex-col w-4/12 gap-4">
-            <h2 className="uppercase text-corporativo  text-center min-[320px]:text-3xl md:text-3xl ">
+        <div className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center md:px-48 gap-16 min-[320px]:mt-6 mt-24 mb-24">
+          <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
+            <h2 className="uppercase text-corporativo  text-center min-[320px]:text-3xl md:text-3xl">
               Formación
             </h2>
             <div className="bg-corporativo h-2 border-2 border-corporativo" />
@@ -93,7 +89,7 @@ const EmprendedoresPage = () => {
               la sostenibilidad.
             </p>
           </div>
-          <div className="flex flex-col w-4/12 gap-4">
+          <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
             <h2 className="uppercase text-corporativo text-center min-[320px]:text-3xl md:text-3xl ">
               ASESORAMIENTO
             </h2>
@@ -107,7 +103,7 @@ const EmprendedoresPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col bg-gradient gap-4 px-48 py-12">
+        <div className="min-[320px]:w-full min-[320px]:p-12 min-[320px]:text-center  flex flex-col bg-gradient gap-4 md:px-48 py-12 md:text-left">
           <h2 className="text-xl">¿QUIERES SABER MÁS?</h2>
           <p className="text-base">
             SI NECESITAS ASESORAMIENTO O INFORMACIÓN SOBRE CÓMO EMPRENDER, NO
