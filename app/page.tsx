@@ -8,13 +8,19 @@ import LaboralImg from "../public/laboral.png";
 import ContableImg from "../public/contabilidad.png";
 import GestionImg from "../public/gestion-empresarial.png";
 import CertificadoImg from "../public/certificacion-digital.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Delowork",
+  description: "Empresa de servicios contables y fiscales",
+};
 
 export default function Home() {
   return (
     <>
       <Navbar />
       {/* {Hero} */}
-      <div className="min-[320px]:h-fit md:h-fit lg:h-screen w-screen flex flex-col">
+      <section className="min-[320px]:h-fit md:h-fit lg:h-screen w-screen flex flex-col">
         <div className="flex min-[320px]:px-12 items-center justify-start gap-6 mt-32 md:px-24 lg:px-48">
           <div className="flex flex-col min-[320px]:items-center md:items-start justify-start px-4 gap-2">
             <div className="bg-gradient p-2 min-[320px]:w-52 md:w-80 shadow-lg">
@@ -62,12 +68,12 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </section>
       {/* {Hero end} */}
 
       {/* {Servicios} */}
 
-      <div className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient   items-center justify-start gap-10 min-[320px]:px-12 px-48">
+      <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient   items-center justify-start gap-10 min-[320px]:px-12 px-48">
         <div className="flex w-screen min-[320px]:px-12 min-[320px]:justify-center min-[320px]:mt-12 px-48 ">
           <div className="bg-gradient p-2 w-75 shadow-lg">
             <h3 className="text-corporativo text-4xl ">Servicios</h3>
@@ -114,11 +120,11 @@ export default function Home() {
             </h3>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* {Servicios end} */}
 
-      <div className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12 h-fit">
+      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12 h-fit">
         <h3 className="text-white text-3xl text-center min-[320px]:text-lg">
           ¿Alguna vez has tenido una idea para un proyecto o negocio, pero no
           has sabido cómo hacerla realidad?
@@ -132,7 +138,7 @@ export default function Home() {
         <button className="text-white bg-opacity-30 border-white border-2 text-xl bg-white rounded-3xl p-2 mb-12">
           Saber mas
         </button>
-      </div>
+      </section>
 
       {/* {Contacto} */}
 

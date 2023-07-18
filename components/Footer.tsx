@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="min-[320px]:flex-col min-[320px]:items-center min-[320px]:text-center min-[320px]:w-full md:flex md:justify-between">
           <span className="text-sm text-white">
             © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="https://delowork.com/" className="hover:underline">
               DELOWORK™
             </a>
             . All Rights Reserved.

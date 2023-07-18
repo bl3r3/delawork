@@ -2,20 +2,27 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Image from "next/image";
-import FotoMain from "../../public/foto-main.png";
+import Emprendedores from "../../public/emprendedore-delowork.png";
 import { FormComponent } from "../../components/Form";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Emprendedores | Delowork",
+  description: "Asesoramiento y formación de emprendedores en Delowork",
+};
 
 const EmprendedoresPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
-        <div className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
+      <main className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
+        <section className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
           <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl ">
             Emprendedores
           </h1>
-        </div>
-        <div className="min-[320px]:w-full h-fit w-screen flex flex-col">
+        </section>
+        <section className="min-[320px]:w-full h-fit w-screen flex flex-col">
           <div className="flex mt-4">
             <div className="min-[320px]:w-full min-[320px]:p-12 flex w-7/12 flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
               <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
@@ -68,14 +75,14 @@ const EmprendedoresPage = () => {
             </div>
             <div className="flex w-5/12 flex-col itmes-center justify-center  img-emprendedores">
               <Image
-                src={FotoMain}
-                alt="Picture of the author"
+                src={Emprendedores}
+                alt="emprendedores delowork"
                 style={{ width: "100%", height: "500px" }}
               />
             </div>
           </div>
-        </div>
-        <div className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center md:px-48 gap-16 min-[320px]:mt-6 mt-24 mb-24">
+        </section>
+        <section className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center md:px-48 gap-16 min-[320px]:mt-6 mt-24 mb-24">
           <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
             <h2 className="uppercase text-corporativo  text-center min-[320px]:text-3xl md:text-3xl">
               Formación
@@ -102,8 +109,8 @@ const EmprendedoresPage = () => {
               la sostenibilidad.
             </p>
           </div>
-        </div>
-        <div className="min-[320px]:w-full min-[320px]:p-12 min-[320px]:text-center  flex flex-col bg-gradient gap-4 md:px-48 py-12 md:text-left">
+        </section>
+        <section className="min-[320px]:w-full min-[320px]:p-12 min-[320px]:text-center  flex flex-col bg-gradient gap-4 md:px-48 py-12 md:text-left">
           <h2 className="text-xl">¿QUIERES SABER MÁS?</h2>
           <p className="text-base">
             SI NECESITAS ASESORAMIENTO O INFORMACIÓN SOBRE CÓMO EMPRENDER, NO
@@ -111,8 +118,8 @@ const EmprendedoresPage = () => {
           </p>
           <div className="bg-corporativo  h-2 border-2 border-corporativo" />
           <FormComponent textArea />
-        </div>
-      </div>
+        </section>
+      </main>
       <Footer />
     </>
   );

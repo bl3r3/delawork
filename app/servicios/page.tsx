@@ -7,19 +7,25 @@ import LaboralImg from "../../public/laboral.png";
 import ContableImg from "../../public/contabilidad.png";
 import Empresa from "../../public/gestion-empresarial.png";
 import Certificado from "../../public/certificacion-digital.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Servicios | Delowork",
+  description: "Servicios de Delowork",
+};
 
 const ServicesPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
+      <section className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
         <div className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
           <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl ">
             Servicios
           </h1>
         </div>
-      </div>
-      <div className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      </section>
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
         <div className="flex min-[320px]:w-full flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             Fiscal
@@ -60,12 +66,12 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
-          <Image src={FiscalImg} width="400" alt="AboutImg" />
+          <Image src={FiscalImg} width="400" alt="Servicio Fiscal Delowork" />
         </div>
-      </div>
-      <div className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      </section>
+      <section className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48">
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
-          <Image src={LaboralImg} width="400" alt="AboutImg" />
+          <Image src={LaboralImg} width="400" alt="Servicio Laboral Delowork" />
         </div>
         <div className="flex min-[320px]:w-full flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
@@ -87,8 +93,8 @@ const ServicesPage = () => {
             repercute positivamente en sus objetivos.
           </p>
         </div>
-      </div>
-      <div className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      </section>
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
         <div className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             Contabilidad
@@ -117,14 +123,22 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
-          <Image src={ContableImg} width="400" alt="AboutImg" />
+          <Image
+            src={ContableImg}
+            width="400"
+            alt="Servicio de Contabilidad Delowork"
+          />
         </div>
-      </div>
+      </section>
       <div className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48">
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
-          <Image src={Empresa} width="400" alt="AboutImg" />
+          <Image
+            src={Empresa}
+            width="400"
+            alt="Servicio de Gestion Empresarial Delowork"
+          />
         </div>
-        <div className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
+        <section className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             GESTIÓN EMPRESARIAL
           </h3>
@@ -140,9 +154,9 @@ const ServicesPage = () => {
             negocio funciona a la perfección. Nos ocupamos de todos los
             detalles, para que usted pueda centrarse en lo esencial.
           </p>
-        </div>
+        </section>
       </div>
-      <div className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48 mb-10">
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48 mb-10">
         <div className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             CERTIFICADO DIGITAL
@@ -161,11 +175,15 @@ const ServicesPage = () => {
           </p>
         </div>
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
-          <Image src={Certificado} width="400" alt="AboutImg" />
+          <Image
+            src={Certificado}
+            width="400"
+            alt="Servicios Certificados Digitales Delowork"
+          />
         </div>
-      </div>
+      </section>
 
-      <div className="flex flex-col background-img-custom-services w-full items-center justify-start gap-10 min-[320px]:p-12 md:px-32 h-fit">
+      <section className="flex flex-col background-img-custom-services w-full items-center justify-start gap-10 min-[320px]:p-12 md:px-32 h-fit">
         <h3 className="text-white min-[320px]:text-xl md:text-3xl text-center ">
           ¿QUIERES TENER MÁS INFORMACIÓN SOBRE NUESTROS SERVICIOS?
         </h3>
@@ -176,7 +194,7 @@ const ServicesPage = () => {
         <button className="text-white bg-opacity-30 border-white border-2 text-xl bg-white rounded-3xl p-2">
           Contactanos
         </button>
-      </div>
+      </section>
 
       <Footer />
     </>
