@@ -24,7 +24,7 @@ const EmprendedoresPage = () => {
         </section>
         <section className="min-[320px]:w-full h-fit w-screen flex flex-col">
           <div className="flex mt-4">
-            <div className="min-[320px]:w-full min-[320px]:p-12 flex w-7/12 flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
+            <div className="min-[320px]:w-full min-[320px]:p-12 flex w-6/12 flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
               <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
                 <div className="flex flex-col itmes-start justify-start gap-2">
                   <div className="bg-gradient p-2 w-56 shadow-lg">
@@ -35,7 +35,7 @@ const EmprendedoresPage = () => {
 
                   <div className="bg-gradient p-2 w-56 shadow-lg">
                     <h1 className="text-corporativo text-4xl font-bold">
-                      {`"Tu sueño`}
+                      {`Tu sueño`}
                     </h1>
                   </div>
 
@@ -46,7 +46,7 @@ const EmprendedoresPage = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-left text-corporativo">
+              <p className="text-left text-corporativo font-bold">
                 ¿Alguna vez has tenido una idea para un proyecto o negocio, pero
                 no has sabido cómo hacerla realidad?
               </p>
@@ -73,7 +73,7 @@ const EmprendedoresPage = () => {
                 Es el momento de empezar a invertir en ti mismo…
               </p>
             </div>
-            <div className="flex w-5/12 flex-col itmes-center justify-center  img-emprendedores">
+            <div className="flex w-6/12 flex-col itmes-center justify-center  img-emprendedores">
               <Image
                 src={Emprendedores}
                 alt="emprendedores delowork"

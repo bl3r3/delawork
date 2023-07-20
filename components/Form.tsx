@@ -1,4 +1,3 @@
-import { type } from "os";
 import React from "react";
 
 type FormProps = {
@@ -37,7 +36,7 @@ export const FormComponent = (props: FormProps) => {
 
         <div className="flex flex-col md:gap-2 min-[320px]:gap-6">
           <label className="block mb-2 text-sm font-medium text-corporativo ">
-            Servicios
+            {textArea ? "Asunto*" : "Servicios"}
           </label>
           <select
             id="services"
@@ -49,8 +48,8 @@ export const FormComponent = (props: FormProps) => {
                 <option selected className="text-corporativo">
                   -Por favor, elige un opción-
                 </option>
-                <option value="Fiscal">Fiscal</option>
-                <option value="Laboral">Laboral</option>
+                <option value="Fiscal">Formación</option>
+                <option value="Laboral">Asesoramiento</option>
               </>
             ) : (
               <>

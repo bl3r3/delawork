@@ -41,16 +41,19 @@ export default function Home() {
         <div className=" flex min-[320px]:flex-col md:flex-row">
           <div className="flex w-5/12 flex-col itmes-center justify-center md:pl-24 lg:pl-48  gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
             <p className="text-left lg:pr-32">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              quis quod et deserunt doloribus aliquid ipsum iure quos, est
-              laborum alias animi, nam quia odit, harum corporis saepe ducimus!
-              Nostrum.
+              <span className="text-corporativo font-bold">DELOWORK</span> es
+              una empresa especializada en asesoría y gestión empresarial.
+              Ofrecemos servicios contables, laborales y fiscales.
             </p>
             <p className="text-left lg:pr-32">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              quis quod et deserunt doloribus aliquid ipsum iure quos, est
-              laborum alias animi, nam quia odit, harum corporis saepe ducimus!
-              Nostrum.
+              Somos un equipo de profesionales altamente cualificados que te
+              ayudarán en tu trabajo diario proporcionándote información útil y
+              fiable.
+            </p>
+            <p className="text-left lg:pr-32">
+              Si estás pensando en trabajar como autónomo te facilitaremos las
+              herramientas necesarias para conseguirlo. Estamos convencidos que
+              juntos podemos mejorar tu día a día.
             </p>
             <Link href="/nosotros">
               <p className="text-corporativo">
@@ -60,7 +63,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex w-7/12 flex-col itmes-center justify-center img-home">
+          <div className="flex w-10/12 flex-col itmes-center justify-center img-home">
             <Image
               src={FotoMain}
               alt="Picture of the author"
@@ -73,40 +76,47 @@ export default function Home() {
 
       {/* {Servicios} */}
 
-      <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient   items-center justify-start gap-10 min-[320px]:px-12 px-48">
+      <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient items-center justify-start gap-10 min-[320px]:px-12 px-48 mt-20">
         <div className="flex w-screen min-[320px]:px-12 min-[320px]:justify-center min-[320px]:mt-12 px-48 ">
           <div className="bg-gradient p-2 w-75 shadow-lg">
-            <h3 className="text-corporativo text-4xl ">Servicios</h3>
+            <h3 className="text-corporativo text-4xl ">SERVICIOS</h3>
           </div>
         </div>
 
         <div className="flex min-[320px]:flex-col sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap lg:flex-nowrap w-full itmes-center justify-between">
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={FiscalImg} width={300} alt="" />
+            <Image
+              src={FiscalImg}
+              width={300}
+              alt="servicios fiscal delowork"
+            />
             <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
               Fiscal
             </h5>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12  flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={LaboralImg} alt="" />
+            <Image src={LaboralImg} alt="servicios laboral delowork" />
             <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
               Laboral
             </h5>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={ContableImg} alt="" />
+            <Image src={ContableImg} alt="servicio contable delowork" />
             <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
               Contabilidad
             </h5>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={GestionImg} alt="" />
+            <Image src={GestionImg} alt="servicios de gestion delowork" />
             <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
               Gestion Empresarial
             </h5>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={CertificadoImg} alt="" />
+            <Image
+              src={CertificadoImg}
+              alt="servicio de certificacion delowork"
+            />
             <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
               Certificados Digitales
             </h5>
@@ -124,10 +134,10 @@ export default function Home() {
 
       {/* {Servicios end} */}
 
-      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12 h-fit">
-        <h3 className="text-white text-3xl text-center min-[320px]:text-lg">
-          ¿Alguna vez has tenido una idea para un proyecto o negocio, pero no
-          has sabido cómo hacerla realidad?
+      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12 md:h-[30rem] min-[320px]:h-fit">
+        <h3 className="text-white text-4xl text-center min-[320px]:text-lg font-bold">
+          ¿ALGUNA VEZ HAS TENIDO UNA IDEA PARA UN PROYECTO O NEGOCIO, PERO NO
+          HAS SABIDO CÓMO HACERLA REALIDAD?
         </h3>
         <p className="text-white text-xl text-center min-[320px]:text-md">
           En DELOWORK estamos convencidos de que la formación es la principal

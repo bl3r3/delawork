@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Logo from "../public/logo.png";
+import LogoBlanco from "../public/Logos-blanco-14.svg";
 
 const Footer = () => {
   return (
@@ -11,10 +13,10 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6">
             <a
-              href="https://flowbite.com/"
+              href="/"
               className="flex items-center min-[320px]:w-full min-[320px]:justify-center"
             >
-              <Image src={Logo} alt="FlowBite Logo" />
+              <Image src={LogoBlanco} alt="FlowBite Logo" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 min-[320px]:grid-cols-3 min-[320px]:gap-4 min-[320px]:text-center md:text-sm md:text-start">
@@ -24,17 +26,14 @@ const Footer = () => {
               </h2>
               <ul className="text-white font-medium min-[320px]:text-xs md:text-sm">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Conocenos
-                  </a>
+                  <Link href="/nosotros" className="hover:underline">
+                    Conócenos
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Contactanos
-                  </a>
+                  <Link href="/contacto" className="hover:underline">
+                    Contáctanos
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -44,44 +43,29 @@ const Footer = () => {
               </h2>
               <ul className="text-white font-medium md:text-sm min-[320px]:text-xs">
                 <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline"
-                  >
+                  <Link href="/servicios" className="hover:underline">
                     Fiscal
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <Link href="/servicios" className="hover:underline">
                     Laboral
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <Link href="/servicios" className="hover:underline">
                     Contabilidad
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <Link href="/servicios" className="hover:underline">
                     Gestion Empresarial
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <Link href="/servicios" className="hover:underline">
                     Certificados Digitales
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -91,14 +75,14 @@ const Footer = () => {
               </h2>
               <ul className="text-white font-medium md:text-sm min-[320px]:text-xs">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="/emprendedores" className="hover:underline">
                     Formación
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="/emprendedores" className="hover:underline">
                     Asesoramiento
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -70,7 +70,7 @@ const AboutPage = () => {
             <div className="bg-corporativo w-full h-2 border-1 border-corporativo" />
             <p className="text-sm text-left leading-7">
               En{" "}
-              <span className="text-corporativo font-semibold">DELOWORK</span>
+              <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
               creemos que la cantidad de información que recibimos (de cualquier
               tipo) se convierte, en muchas ocasiones, en una vorágine de datos
               difíciles de asimilar e interpretar.
