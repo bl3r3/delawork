@@ -32,7 +32,7 @@ const AboutPage = () => {
               Misión
             </h3>
             <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               El principal objetivo de{" "}
               <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
               es colaborar, orientar y ayudar a las personas que tienen el deseo
@@ -46,7 +46,7 @@ const AboutPage = () => {
               extensa normativa, tanto contable como legal, fiscal, laboral,
               etc., que estamos obligados a cumplir.
             </p>
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               Creemos que nuestros clientes se merecen algo más que un servicio
               excelente. Por eso también les proporcionamos información sobre
               cómo pueden conseguir sus objetivos de una manera fácil y sin
@@ -68,21 +68,21 @@ const AboutPage = () => {
               Visión
             </h3>
             <div className="bg-corporativo w-full h-2 border-1 border-corporativo" />
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               En{" "}
               <span className="text-corporativo font-semibold">DELOWORK</span>
               creemos que la cantidad de información que recibimos (de cualquier
               tipo) se convierte, en muchas ocasiones, en una vorágine de datos
               difíciles de asimilar e interpretar.
             </p>
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               Por ello, ofrecemos nuestros servicios a todas aquellas personas
               que no saben por dónde empezar su proyecto (tanto personal como
               empresarial) y nos adaptamos a sus necesidades y entorno para
               facilitar el flujo de comunicación con los diferentes organismos
               públicos y privados.
             </p>
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               Además, gracias a la colaboración y apoyo continuo que ofrecemos,
               cada acción que se realiza ante ellos repercute positivamente en
               sus objetivos.
@@ -95,7 +95,7 @@ const AboutPage = () => {
               Valores
             </h3>
             <div className="bg-corporativo w-full h-2 border-1 border-corporativo" />
-            <p className="text-sm text-justify leading-7">
+            <p className="text-sm text-left leading-7">
               Los valores de{" "}
               <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
               se basan en unos principios básicos, pero a la vez sumamente

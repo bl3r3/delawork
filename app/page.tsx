@@ -40,13 +40,13 @@ export default function Home() {
 
         <div className=" flex min-[320px]:flex-col md:flex-row">
           <div className="flex w-5/12 flex-col itmes-center justify-center md:pl-24 lg:pl-48  gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
-            <p className="text-justify lg:pr-32">
+            <p className="text-left lg:pr-32">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
               quis quod et deserunt doloribus aliquid ipsum iure quos, est
               laborum alias animi, nam quia odit, harum corporis saepe ducimus!
               Nostrum.
             </p>
-            <p className="text-justify lg:pr-32">
+            <p className="text-left lg:pr-32">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
               quis quod et deserunt doloribus aliquid ipsum iure quos, est
               laborum alias animi, nam quia odit, harum corporis saepe ducimus!

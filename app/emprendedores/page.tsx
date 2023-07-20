@@ -46,11 +46,11 @@ const EmprendedoresPage = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-justify text-corporativo">
+              <p className="text-left text-corporativo">
                 ¿Alguna vez has tenido una idea para un proyecto o negocio, pero
                 no has sabido cómo hacerla realidad?
               </p>
-              <p className="text-justify">
+              <p className="text-left">
                 En <span className="text-corporativo">DELOWORK</span> estamos
                 convencidos de que la formación es la principal herramienta que
                 necesitas para la consecución de tus objetivos.
@@ -88,12 +88,12 @@ const EmprendedoresPage = () => {
               Formación
             </h2>
             <div className="bg-corporativo h-2 border-2 border-corporativo" />
-            <p className="text-justify mt-6 text-base">
-              Los valores de DELOWORK se basan en unos principios básicos, pero
-              a la vez sumamente importantes para la consecución de los
-              objetivos, como son: el respeto, la aptitud de servicio, la
-              escucha activa, la eficacia y la mejora continua, la cooperación y
-              la sostenibilidad.
+            <p className="text-left mt-6 text-base">
+              Los valores de <span className="text-corporativo">DELOWORK</span>{" "}
+              se basan en unos principios básicos, pero a la vez sumamente
+              importantes para la consecución de los objetivos, como son: el
+              respeto, la aptitud de servicio, la escucha activa, la eficacia y
+              la mejora continua, la cooperación y la sostenibilidad.
             </p>
           </div>
           <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
@@ -101,12 +101,12 @@ const EmprendedoresPage = () => {
               ASESORAMIENTO
             </h2>
             <div className="bg-corporativo  h-2 border-2 border-corporativo" />
-            <p className="text-justify mt-6">
-              Los valores de DELOWORK se basan en unos principios básicos, pero
-              a la vez sumamente importantes para la consecución de los
-              objetivos, como son: el respeto, la aptitud de servicio, la
-              escucha activa, la eficacia y la mejora continua, la cooperación y
-              la sostenibilidad.
+            <p className="text-left mt-6">
+              Los valores de <span className="text-corporativo">DELOWORK</span>{" "}
+              se basan en unos principios básicos, pero a la vez sumamente
+              importantes para la consecución de los objetivos, como son: el
+              respeto, la aptitud de servicio, la escucha activa, la eficacia y
+              la mejora continua, la cooperación y la sostenibilidad.
             </p>
           </div>
         </section>

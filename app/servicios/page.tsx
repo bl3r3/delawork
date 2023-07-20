@@ -31,7 +31,7 @@ const ServicesPage = () => {
             Fiscal
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Los servicios fiscales de{" "}
             <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
             pueden ayudarle a controlar sus impuestos para que no tenga que
@@ -42,7 +42,7 @@ const ServicesPage = () => {
             expertos que saben cómo maximizar sus deducciones y minimizar su
             responsabilidad.
           </p>
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Trabajamos con todo tipo de individuos, incluyendo aquellos que
             trabajan por cuenta propia, son dueños de un pequeño negocio, o
             tienen propiedades de alquiler. Nuestro objetivo es asegurarnos de
@@ -52,7 +52,7 @@ const ServicesPage = () => {
             finos para que podamos asegurarnos de que hasta el último dólar se
             maximiza.
           </p>
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Sabemos que la temporada de impuestos puede ser estresante para
             muchas personas, especialmente si sienten que no tienen suficientes
             conocimientos sobre impuestos (o si simplemente no disfrutan
@@ -78,7 +78,7 @@ const ServicesPage = () => {
             Laboral
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             En <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
             creemos que la cantidad de información que recibimos (de cualquier
             tipo) se convierte, en muchas ocasiones, en una vorágine de datos
@@ -100,7 +100,7 @@ const ServicesPage = () => {
             Contabilidad
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Los servicios fiscales de{" "}
             <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
             pueden ayudarle a controlar sus impuestos para que no tenga que
@@ -111,7 +111,7 @@ const ServicesPage = () => {
             expertos que saben cómo maximizar sus deducciones y minimizar su
             responsabilidad.
           </p>
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Trabajamos con todo tipo de individuos, incluyendo aquellos que
             trabajan por cuenta propia, son dueños de un pequeño negocio, o
             tienen propiedades de alquiler. Nuestro objetivo es asegurarnos de
@@ -143,7 +143,7 @@ const ServicesPage = () => {
             GESTIÓN EMPRESARIAL
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             En <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
             creemos que su negocio es único, y nos esforzamos por ofrecer un
             servicio que lo refleje. Sabemos que tiene muchas opciones en el
@@ -162,7 +162,7 @@ const ServicesPage = () => {
             CERTIFICADO DIGITAL
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
-          <p className="text-sm text-justify leading-7">
+          <p className="text-sm text-left leading-7">
             Los servicios fiscales de{" "}
             <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
             pueden ayudarle a controlar sus impuestos para que no tenga que
