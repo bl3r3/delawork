@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-5 text-corporativo">
         <Link href="/">
-          <Image src={Logo} alt="Logo" width={130} height={100} />
+          <Image src={Logo} alt="Logo" width={180} height={180} />
         </Link>
         <ul className="hidden lg:flex ">
           <li className="p-5">

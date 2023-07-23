@@ -24,7 +24,7 @@ const EmprendedoresPage = () => {
         </section>
         <section className="min-[320px]:w-full h-fit w-screen flex flex-col">
           <div className="flex mt-4">
-            <div className="min-[320px]:w-full min-[320px]:p-12 flex w-6/12 flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
+            <div className="min-[320px]:w-full md:w-[45rem] lg:w-[60rem] min-[320px]:p-12 flex flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
               <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
                 <div className="flex flex-col itmes-start justify-start gap-2">
                   <div className="bg-gradient p-2 w-56 shadow-lg">
@@ -46,7 +46,7 @@ const EmprendedoresPage = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-left text-corporativo font-bold">
+              <p className="text-left text-corporativo font-bold mt-6">
                 ¿Alguna vez has tenido una idea para un proyecto o negocio, pero
                 no has sabido cómo hacerla realidad?
               </p>

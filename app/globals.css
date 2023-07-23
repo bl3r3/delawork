@@ -9,14 +9,14 @@ html {
 }
 
 .background-img-custom {
-  background-image: url("../public/bg-button.png");
+  background-image: url("../public/bg-main.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .background-img-custom-services {
-  background-image: url("../public/business-peoplepng.png");
+  background-image: url("../public/bg-emprendedores.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

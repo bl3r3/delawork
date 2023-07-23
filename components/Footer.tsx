@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import Logo from "../public/logo.png";
 import LogoBlanco from "../public/Logos-blanco-14.svg";
 
 const Footer = () => {

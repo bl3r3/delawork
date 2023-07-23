@@ -11,6 +11,7 @@ module.exports = {
       white: "#FFFFFF",
       gradient: "#dde0ef",
       gris: "#707070",
+      green: "rgb(16 185 129)",
     },
     extend: {
       backgroundImage: {

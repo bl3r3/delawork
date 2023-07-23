@@ -183,7 +183,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section className="flex flex-col background-img-custom-services w-full items-center justify-start gap-10 min-[320px]:p-12 md:px-32 h-fit">
+      <section className="flex flex-col background-img-custom-services w-full items-center justify-start gap-10 min-[320px]:p-12 md:px-32 lg:h-[25rem] lg:gap-12 h-fit">
         <h3 className="text-white min-[320px]:text-xl md:text-3xl text-center ">
           ¿QUIERES TENER MÁS INFORMACIÓN SOBRE NUESTROS SERVICIOS?
         </h3>
@@ -191,8 +191,8 @@ const ServicesPage = () => {
           Ponte en contacto con nosotros rellenando el siguiente formulario y
           estaremos encantados de poder ayudarte
         </p>
-        <button className="text-white bg-opacity-30 border-white border-2 text-xl bg-white rounded-3xl p-2">
-          Contactanos
+        <button className="text-white bg-opacity-30 border-white border-2 text-2xl bg-white rounded-3xl p-2">
+          Contáctanos
         </button>
       </section>
 

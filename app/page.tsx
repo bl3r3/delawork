@@ -39,18 +39,18 @@ export default function Home() {
         </div>
 
         <div className=" flex min-[320px]:flex-col md:flex-row">
-          <div className="flex w-5/12 flex-col itmes-center justify-center md:pl-24 lg:pl-48  gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
-            <p className="text-left lg:pr-32">
+          <div className="flex md:w-[45rem] lg:w-[80rem] flex-col itmes-center justify-center md:pl-24 lg:pl-48  gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
+            <p className="text-left md:mt-10">
               <span className="text-corporativo font-bold">DELOWORK</span> es
               una empresa especializada en asesoría y gestión empresarial.
               Ofrecemos servicios contables, laborales y fiscales.
             </p>
-            <p className="text-left lg:pr-32">
+            <p className="text-left ">
               Somos un equipo de profesionales altamente cualificados que te
               ayudarán en tu trabajo diario proporcionándote información útil y
               fiable.
             </p>
-            <p className="text-left lg:pr-32">
+            <p className="text-left ">
               Si estás pensando en trabajar como autónomo te facilitaremos las
               herramientas necesarias para conseguirlo. Estamos convencidos que
               juntos podemos mejorar tu día a día.
@@ -63,7 +63,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex w-10/12 flex-col itmes-center justify-center img-home">
+          <div className="flex md:w-[40rem] lg:w-full flex-col itmes-center justify-center img-home">
             <Image
               src={FotoMain}
               alt="Picture of the author"
@@ -76,10 +76,10 @@ export default function Home() {
 
       {/* {Servicios} */}
 
-      <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient items-center justify-start gap-10 min-[320px]:px-12 px-48 mt-20">
-        <div className="flex w-screen min-[320px]:px-12 min-[320px]:justify-center min-[320px]:mt-12 px-48 ">
+      <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient items-center justify-start gap-10 min-[320px]:px-12 md:px-14 lg:px-48 ">
+        <div className="flex w-screen min-[320px]:px-12 min-[320px]:justify-center min-[320px]:mt-12 md:px-20 lg:px-48  md:justify-start">
           <div className="bg-gradient p-2 w-75 shadow-lg">
-            <h3 className="text-corporativo text-4xl ">SERVICIOS</h3>
+            <h3 className="text-corporativo text-4xl">SERVICIOS</h3>
           </div>
         </div>
 
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-screen min-[320px]:px-12 px-48 mb-12">
+        <div className="flex w-screen min-[320px]:px-12 md:px-12 lg:px-48 mb-12">
           <div className="bg-white p-2 w-75 shadow-2xl">
             <h3 className="text-corporativo text-4xl min-[320px]:text-center md:text-left">
               ¿QUIERES EMPRENDER?
@@ -134,19 +134,19 @@ export default function Home() {
 
       {/* {Servicios end} */}
 
-      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12 md:h-[30rem] min-[320px]:h-fit">
-        <h3 className="text-white text-4xl text-center min-[320px]:text-lg font-bold">
+      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12  md:h-[25rem] lg:h-[35rem] min-[320px]:h-fit">
+        <h3 className="text-white md:text-2xl lg:text-4xl text-center min-[320px]:text-lg font-bold">
           ¿ALGUNA VEZ HAS TENIDO UNA IDEA PARA UN PROYECTO O NEGOCIO, PERO NO
           HAS SABIDO CÓMO HACERLA REALIDAD?
         </h3>
-        <p className="text-white text-xl text-center min-[320px]:text-md">
-          En DELOWORK estamos convencidos de que la formación es la principal
+        <p className="text-white md:text-xl lg:text-2xl text-center min-[320px]:text-md">
+          EEn DELOWORK estamos convencidos de que la formación es la principal
           herramienta que necesitas para la consecución de tus objetivos.
           Ofrecemos formación gratuita para que puedas empezar a dar forma a ese
           sueño.
         </p>
-        <button className="text-white bg-opacity-30 border-white border-2 text-xl bg-white rounded-3xl p-2 mb-12">
-          Saber mas
+        <button className="text-white bg-opacity-20 border-white border-2 text-xl bg-white rounded-3xl p-4 mb-12">
+          Saber más
         </button>
       </section>
 

@@ -63,7 +63,7 @@ const AboutPage = () => {
           <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 ">
             <Image src={VisiosImg} alt="Vision Delowork" />
           </div>
-          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 gap-4">
+          <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 gap-4 text-left md:items-start">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Visión
             </h3>
@@ -105,7 +105,7 @@ const AboutPage = () => {
             </p>
           </div>
         </section>
-        <section className="min-[320px]:w-full h-auto flex flex-col justify-center items-center mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48">
+        <section className="min-[320px]:w-full h-auto flex flex-col justify-center items-center mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48 gap-32">
           <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 md:items-end">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Creamos
