@@ -78,48 +78,58 @@ export default function Home() {
 
       <section className="flex flex-col w-full h-auto bg-gradient-to-b from-white  to-gradient items-center justify-start gap-10 min-[320px]:px-12 md:px-14 lg:px-48 ">
         <div className="flex w-screen min-[320px]:px-12 min-[320px]:justify-center min-[320px]:mt-12 md:px-20 lg:px-48  md:justify-start">
-          <div className="bg-gradient p-2 w-75 shadow-lg">
+          <div className="bg-gradient p-2 w-75 shadow-lg md:mt-16">
             <h3 className="text-corporativo text-4xl">SERVICIOS</h3>
           </div>
         </div>
 
         <div className="flex min-[320px]:flex-col sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap lg:flex-nowrap w-full itmes-center justify-between">
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image
-              src={FiscalImg}
-              width={300}
-              alt="servicios fiscal delowork"
-            />
-            <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
-              Fiscal
-            </h5>
+            <Link href="/servicios">
+              <Image
+                src={FiscalImg}
+                width={300}
+                alt="servicios fiscal delowork"
+              />
+              <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
+                Fiscal
+              </h5>
+            </Link>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12  flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={LaboralImg} alt="servicios laboral delowork" />
-            <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
-              Laboral
-            </h5>
+            <Link href="/servicios">
+              <Image src={LaboralImg} alt="servicios laboral delowork" />
+              <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
+                Laboral
+              </h5>
+            </Link>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={ContableImg} alt="servicio contable delowork" />
-            <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
-              Contabilidad
-            </h5>
+            <Link href="/servicios">
+              <Image src={ContableImg} alt="servicio contable delowork" />
+              <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
+                Contabilidad
+              </h5>
+            </Link>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image src={GestionImg} alt="servicios de gestion delowork" />
-            <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
-              Gestion Empresarial
-            </h5>
+            <Link href="/servicios">
+              <Image src={GestionImg} alt="servicios de gestion delowork" />
+              <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
+                Gestion Empresarial
+              </h5>
+            </Link>
           </div>
           <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
-            <Image
-              src={CertificadoImg}
-              alt="servicio de certificacion delowork"
-            />
-            <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
-              Certificados Digitales
-            </h5>
+            <Link href="/servicios">
+              <Image
+                src={CertificadoImg}
+                alt="servicio de certificacion delowork"
+              />
+              <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
+                Certificados Digitales
+              </h5>
+            </Link>
           </div>
         </div>
 
@@ -134,7 +144,7 @@ export default function Home() {
 
       {/* {Servicios end} */}
 
-      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-48 min-[320px]:px-12 min-[320px]:pt-12  md:h-[25rem] lg:h-[35rem] min-[320px]:h-fit">
+      <section className="flex flex-col background-img-custom w-full bg-gradient-to-b from-white to-gradient items-center justify-center gap-10 lg:px-52 min-[320px]:px-12 min-[320px]:pt-12  md:h-[25rem] lg:h-[35rem] min-[320px]:h-fit">
         <h3 className="text-white md:text-2xl lg:text-4xl text-center min-[320px]:text-lg font-bold">
           ¿ALGUNA VEZ HAS TENIDO UNA IDEA PARA UN PROYECTO O NEGOCIO, PERO NO
           HAS SABIDO CÓMO HACERLA REALIDAD?
@@ -145,9 +155,11 @@ export default function Home() {
           Ofrecemos formación gratuita para que puedas empezar a dar forma a ese
           sueño.
         </p>
-        <button className="text-white bg-opacity-20 border-white border-2 text-xl bg-white rounded-3xl p-4 mb-12">
-          Saber más
-        </button>
+        <Link href="/emprendedores">
+          <button className="text-white bg-opacity-20 border-white border-2 text-xl bg-white rounded-3xl p-4 mb-12">
+            Saber más
+          </button>
+        </Link>
       </section>
 
       {/* {Contacto} */}

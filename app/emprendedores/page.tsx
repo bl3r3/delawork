@@ -27,20 +27,20 @@ const EmprendedoresPage = () => {
             <div className="min-[320px]:w-full md:w-[45rem] lg:w-[60rem] min-[320px]:p-12 flex flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
               <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
                 <div className="flex flex-col itmes-start justify-start gap-2">
-                  <div className="bg-gradient p-2 w-56 shadow-lg">
-                    <h1 className="text-corporativo text-4xl font-bold">
+                  <div className="bg-gradient p-2 w-62 shadow-lg">
+                    <h1 className="text-corporativo text-4xl font-bold uppercase">
                       {`"Convierte`}
                     </h1>
                   </div>
 
                   <div className="bg-gradient p-2 w-56 shadow-lg">
-                    <h1 className="text-corporativo text-4xl font-bold">
+                    <h1 className="text-corporativo text-4xl font-bold uppercase">
                       {`Tu sueño`}
                     </h1>
                   </div>
 
                   <div className="bg-gradient p-2 w-62 shadow-lg">
-                    <h1 className="text-corporativo text-4xl font-bold">
+                    <h1 className="text-corporativo text-4xl font-bold uppercase">
                       {`En realidad"`}
                     </h1>
                   </div>
@@ -73,7 +73,7 @@ const EmprendedoresPage = () => {
                 Es el momento de empezar a invertir en ti mismo…
               </p>
             </div>
-            <div className="flex w-6/12 flex-col itmes-center justify-center  img-emprendedores">
+            <div className="flex md:w-6/12 lg:w-[60rem] flex-col itmes-center justify-center  img-emprendedores">
               <Image
                 src={Emprendedores}
                 alt="emprendedores delowork"

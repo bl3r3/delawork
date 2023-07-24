@@ -8,6 +8,7 @@ import ContableImg from "../../public/contabilidad.png";
 import Empresa from "../../public/gestion-empresarial.png";
 import Certificado from "../../public/certificacion-digital.png";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Servicios | Delowork",
@@ -184,16 +185,18 @@ const ServicesPage = () => {
       </section>
 
       <section className="flex flex-col background-img-custom-services w-full items-center justify-start gap-10 min-[320px]:p-12 md:px-32 lg:h-[25rem] lg:gap-12 h-fit">
-        <h3 className="text-white min-[320px]:text-xl md:text-3xl text-center ">
+        <h3 className="text-white min-[320px]:text-xl md:text-3xl text-center font-bold">
           ¿QUIERES TENER MÁS INFORMACIÓN SOBRE NUESTROS SERVICIOS?
         </h3>
         <p className="text-white min-[320px]:text-xl md:text-xl text-center">
           Ponte en contacto con nosotros rellenando el siguiente formulario y
           estaremos encantados de poder ayudarte
         </p>
-        <button className="text-white bg-opacity-30 border-white border-2 text-2xl bg-white rounded-3xl p-2">
-          Contáctanos
-        </button>
+        <Link href="/contacto">
+          <button className="text-white bg-opacity-30 border-white border-2 text-2xl bg-white rounded-3xl p-2">
+            Contáctanos
+          </button>
+        </Link>
       </section>
 
       <Footer />

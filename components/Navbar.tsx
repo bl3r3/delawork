@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { GoHomeFill } from "react-icons/go";
-import Logo from "../public/logo-azul.png";
+import Logo from "../public/logo-svg.svg";
 
 import Image from "next/image";
 const Navbar = () => {
