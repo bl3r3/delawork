@@ -9,6 +9,7 @@ import Empresa from "../../public/gestion-empresarial.png";
 import Certificado from "../../public/certificacion-digital.png";
 import { Metadata } from "next";
 import Link from "next/link";
+import ScrollToTop from "../../components/ScrollTop";
 
 export const metadata: Metadata = {
   title: "Servicios | Delowork",
@@ -18,7 +19,8 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
   return (
     <>
-      <Navbar />
+      <ScrollToTop />
+      <Navbar color="#fff" textColor="#0052A1" />
       <section className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
         <div className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
           <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl ">

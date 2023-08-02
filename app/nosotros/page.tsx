@@ -7,6 +7,7 @@ import VisiosImg from "../../public/vision-delowork.png";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { Metadata } from "next";
+import ScrollToTop from "../../components/ScrollTop";
 
 export const metadata: Metadata = {
   title: "Nosotros | Delowork",
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+      <ScrollToTop />
+      <Navbar color="#fff" textColor="#0052A1" />
       <main className=" w-screen h-full bg-gradient-to-b from-white via-gradient to-white ">
         <section className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
           <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl">
@@ -59,7 +61,7 @@ const AboutPage = () => {
             <Image src={AboutImg} alt="Nosotros Delowork" />
           </div>
         </section>
-        <section className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48 ">
+        <section className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-20 px-8 md:px-12 md:flex-row md:items-center lg:px-48 ">
           <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 ">
             <Image src={VisiosImg} alt="Vision Delowork" />
           </div>
@@ -105,7 +107,7 @@ const AboutPage = () => {
             </p>
           </div>
         </section>
-        <section className="min-[320px]:w-full h-auto flex flex-col justify-center items-center mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48 gap-32">
+        <section className="min-[320px]:w-full h-auto flex flex-col justify-center items-center mt-20 px-10 md:px-12 md:flex-row md:items-center lg:px-48 gap-32 mb-12">
           <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 md:items-end">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Creamos

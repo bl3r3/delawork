@@ -97,11 +97,14 @@ const Footer = () => {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 min-[320px]:items-center min-[320px]:justify-center sm:justify-center">
-            <a href="#" className="text-white">
+            <a
+              href="https://instagram.com/delowork_?igshid=MzRlODBiNWFlZA=="
+              className="text-white"
+            >
               <FaInstagram size={20} fill="white" />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/DeloWorkSL"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <FaFacebookF size={20} fill="white" />

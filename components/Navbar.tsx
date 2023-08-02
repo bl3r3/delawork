@@ -4,31 +4,23 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { GoHomeFill } from "react-icons/go";
-import Logo from "../public/logo-svg.svg";
-
+import LogoAzul from "../public/logo-svg.svg";
+import LogoBlanco from "../public/Logos-blanco-14.svg";
 import Image from "next/image";
-const Navbar = () => {
+
+type NavbarProps = {
+  color: string;
+  textColor: string;
+  home?: boolean;
+};
+
+const Navbar = (props: NavbarProps) => {
+  const { color, textColor, home } = props;
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("#ffffff");
-  const [textColor, setTextColor] = useState("#0052A1");
 
   const handleNav = () => {
     setNav(!nav);
   };
-
-  useEffect(() => {
-    const changeBackground = () => {
-      if (window.scrollY >= 60) {
-        setColor("#ffffff");
-        setTextColor("#0052A1");
-      } else {
-        setColor("#ffffff");
-        setTextColor("#0052A1");
-      }
-    };
-
-    window.addEventListener("scroll", changeBackground);
-  }, []);
 
   return (
     <div
@@ -37,21 +29,26 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-5 text-corporativo">
         <Link href="/">
-          <Image src={Logo} alt="Logo" width={180} height={180} />
+          <Image
+            src={home ? LogoBlanco : LogoAzul}
+            alt="Logo"
+            width={180}
+            height={180}
+          />
         </Link>
         <ul className="hidden lg:flex ">
-          <li className="p-5">
+          <li className="p-5" style={{ color: `${textColor}` }}>
             <Link href="/">
-              <GoHomeFill size={30} fill="#0052A1" />
+              <GoHomeFill size={30} fill={textColor} />
             </Link>
           </li>
-          <li className="p-5 text-corporativo">
+          <li className="p-5" style={{ color: `${textColor}` }}>
             <Link href="/nosotros">Nosotros</Link>
           </li>
-          <li className="p-5 text-corporativo">
+          <li className="p-5" style={{ color: `${textColor}` }}>
             <Link href="/servicios">Servicios</Link>
           </li>
-          <li className="p-5 text-corporativo">
+          <li className="p-5" style={{ color: `${textColor}` }}>
             <Link href="/emprendedores">Emprendedores</Link>
           </li>
           <li className=" p-1 text-corporativo">
@@ -81,7 +78,10 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="p-4 text-white text-4xl hover:text-second-color-hl">
+            <li
+              className={`p-4 text-4xl hover:text-second-color-hl 
+            ${textColor}`}
+            >
               <Link href="/">Home</Link>
             </li>
             <li className="p-4 text-white text-4xl hover:text-second-color-hl">
