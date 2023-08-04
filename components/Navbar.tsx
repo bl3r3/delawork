@@ -78,10 +78,7 @@ const Navbar = (props: NavbarProps) => {
           }
         >
           <ul>
-            <li
-              className={`p-4 text-4xl hover:text-second-color-hl 
-            ${textColor}`}
-            >
+            <li className="p-4 text-white text-4xl hover:text-second-color-hl">
               <Link href="/">Home</Link>
             </li>
             <li className="p-4 text-white text-4xl hover:text-second-color-hl">

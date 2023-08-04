@@ -22,7 +22,7 @@ const ContanctPage = () => {
             Contacto
           </h1>
         </div>
-        <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center gap-10 mt-8 md:px-12  md:items-start lg:px-48 md:gap-5">
+        <section className="w-full min-[320px]:px-5 flex flex-col justify-between items-center gap-10 mt-8 md:px-12  md:items-start lg:px-48 md:gap-5">
           <h2 className="text-corporativo text-4xl uppercase">CONTÁCTANOS</h2>
           <p className="text-corporativo text-base min-[320px]:text-center md:text-left">
             SI NECESITAS ASESORAMIENTO SOBRE NUESTROS SERVICIOS, TIENES ALGUNA
@@ -31,7 +31,7 @@ const ContanctPage = () => {
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo md:w-4/12" />
         </section>
 
-        <section className="w-full min-[320px]:px-4  md:px-12 lg:px-48 mb-24">
+        <section className="w-full min-[320px]:px-5  md:px-12 lg:px-48 mb-24">
           <FormComponent />
         </section>
       </main>

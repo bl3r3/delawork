@@ -19,14 +19,14 @@ const EmprendedoresPage = () => {
       <ScrollToTop />
       <Navbar color="#fff" textColor="#0052A1" />
       <main className="w-screen h-full bg-gradient-to-b from-white via-gradient to-white">
-        <section className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-4 gap-2 mt-24">
+        <section className="w-screen h-40 flex flex-col justify-center items-center bg-corporativo p-5 gap-2 mt-24">
           <h1 className="uppercase text-white min-[320px]:text-3xl md:text-5xl ">
             Emprendedores
           </h1>
         </section>
         <section className="min-[320px]:w-full h-fit w-screen flex flex-col">
           <div className="flex mt-4">
-            <div className="min-[320px]:w-full md:w-[45rem] lg:w-[60rem] min-[320px]:p-12 flex flex-col itmes-start justify-start md:pl-48 md:pr-12 gap-4">
+            <div className="min-[320px]:w-full md:w-[45rem] lg:w-[60rem] min-[320px]:p-12 flex flex-col itmes-start justify-start min-[1200px]:pl-48 max-[1200px]:pl-8  md:pr-12 gap-4">
               <div className="min-[320px] flex items-start justify-start gap-6 mt-16">
                 <div className="flex flex-col itmes-start justify-start gap-2">
                   <div className="bg-gradient p-2 w-62 shadow-lg">
@@ -84,7 +84,7 @@ const EmprendedoresPage = () => {
             </div>
           </div>
         </section>
-        <section className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center md:px-48 gap-16 min-[320px]:mt-6 mt-24 mb-24">
+        <section className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center min-[1200px]:px-48 max-[1200px]:px-8 gap-16 min-[320px]:mt-6 mt-24 mb-24">
           <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
             <h2 className="uppercase text-corporativo  text-center min-[320px]:text-3xl md:text-3xl">
               Formación
@@ -112,7 +112,7 @@ const EmprendedoresPage = () => {
             </p>
           </div>
         </section>
-        <section className="min-[320px]:w-full min-[320px]:p-12 min-[320px]:text-center  flex flex-col bg-gradient gap-4 md:px-48 py-12 md:text-left">
+        <section className="min-[320px]:w-full min-[320px]:p-12 min-[320px]:text-center  flex flex-col bg-gradient gap-4 min-[1200px]:px-48 max-[1200px]:px-8 py-12 md:text-left">
           <h2 className="text-xl">¿QUIERES SABER MÁS?</h2>
           <p className="text-base">
             SI NECESITAS ASESORAMIENTO O INFORMACIÓN SOBRE CÓMO EMPRENDER, NO
