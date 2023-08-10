@@ -28,7 +28,7 @@ const ServicesPage = () => {
           </h1>
         </div>
       </section>
-      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
         <div className="flex min-[320px]:w-full flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             Fiscal
@@ -72,7 +72,7 @@ const ServicesPage = () => {
           <Image src={FiscalImg} width="400" alt="Servicio Fiscal Delowork" />
         </div>
       </section>
-      <section className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
           <Image src={LaboralImg} width="400" alt="Servicio Laboral Delowork" />
         </div>
@@ -97,7 +97,7 @@ const ServicesPage = () => {
           </p>
         </div>
       </section>
-      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
         <div className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             Contabilidad
@@ -133,7 +133,7 @@ const ServicesPage = () => {
           />
         </div>
       </section>
-      <div className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-8 px-8 md:px-12 md:flex-row md:items-center lg:px-48">
+      <div className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
           <Image
             src={Empresa}
@@ -159,7 +159,7 @@ const ServicesPage = () => {
           </p>
         </section>
       </div>
-      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48 mb-10">
+      <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48 mb-10">
         <div className="flex min-[320px]:w-full px-4 flex-col justify-center items-center p-2 gap-4 md:w-8/12 md:items-start">
           <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
             CERTIFICADO DIGITAL

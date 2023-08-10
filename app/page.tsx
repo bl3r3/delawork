@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className=" flex min-[320px]:flex-col md:flex-row">
-          <div className="flex md:w-[45rem] lg:w-[80rem] flex-col itmes-center justify-center max-[1200px]:pl-14  min-[1200px]:pl-48   gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
+          <div className="flex md:w-[45rem] lg:w-[80rem] flex-col itmes-center justify-center max-[1200px]:pl-14  min-[1200px]:pl-48 gap-6 text-lg min-[320px]:px-12 min-[320px]:w-full min-[320px]:mt-8 md:mt-0 md:gap-2">
             <p className="text-left md:mt-10">
               <span className="text-corporativo font-bold">DELOWORK</span> es
               una empresa especializada en asesoría y gestión empresarial.
@@ -65,7 +65,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex md:w-[40rem] lg:w-full flex-col itmes-center justify-center img-home md:mt-[-150px]">
+          <div className="flex md:w-[20rem] lg:w-full flex-col itmes-center justify-center img-home md:mt-[-150px] md:pr-28">
             <Image
               src={FotoMain}
               alt="Picture of the author"
@@ -86,13 +86,9 @@ export default function Home() {
         </div>
 
         <div className="flex min-[320px]:flex-col sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap lg:flex-nowrap w-full md:itmes-center md:justify-between md:w-full">
-          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center md:gap-2 md:p-2 gap-4 p-4">
+          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
             <Link href="/servicios">
-              <Image
-                src={FiscalImg}
-                width={300}
-                alt="servicios fiscal delowork"
-              />
+              <Image src={FiscalImg} alt="servicios fiscal delowork" />
               <h5 className="text-corporativo text-2xl min-[320px]:text-xl text-center font-semibold">
                 Fiscal
               </h5>
@@ -114,7 +110,7 @@ export default function Home() {
               </h5>
             </Link>
           </div>
-          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
+          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 md:mt-[30px]">
             <Link href="/servicios">
               <Image src={GestionImg} alt="servicios de gestion delowork" />
               <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
@@ -122,7 +118,7 @@ export default function Home() {
               </h5>
             </Link>
           </div>
-          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4">
+          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 md:mt-[30px]">
             <Link href="/servicios">
               <Image
                 src={CertificadoImg}

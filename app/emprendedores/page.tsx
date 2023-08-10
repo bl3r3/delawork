@@ -75,7 +75,7 @@ const EmprendedoresPage = () => {
                 Es el momento de empezar a invertir en ti mismo…
               </p>
             </div>
-            <div className="flex md:w-6/12 lg:w-[60rem] flex-col itmes-center justify-center  img-emprendedores">
+            <div className="flex md:w-6/12 lg:w-[45rem] flex-col itmes-center justify-center  img-emprendedores md:pr-28">
               <Image
                 src={Emprendedores}
                 alt="emprendedores delowork"

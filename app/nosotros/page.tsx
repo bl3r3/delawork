@@ -28,7 +28,7 @@ const AboutPage = () => {
             Mision, Vision y Valores
           </h2>
         </section>
-        <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8 md:px-12 md:flex-row md:items-center lg:px-48">
+        <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center gap-10 mt-8 md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
           <div className="flex min-[320px]:w-full flex-col justify-center items-center p-2 gap-4 md:w-7/12 md:items-start">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Misión
@@ -61,7 +61,7 @@ const AboutPage = () => {
             <Image src={AboutImg} alt="Nosotros Delowork" />
           </div>
         </section>
-        <section className="min-[320px]:w-full flex flex-col-reverse justify-between items-center gap-10 mt-20 px-8 md:px-12 md:flex-row md:items-center lg:px-48 ">
+        <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center gap-10 mt-8 md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
           <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2 ">
             <Image src={VisiosImg} alt="Vision Delowork" />
           </div>
@@ -91,7 +91,7 @@ const AboutPage = () => {
             </p>
           </div>
         </section>
-        <section className="min-[320px]:w-full md:w-8/12 flex flex-col justify-between items-center gap-20 mt-8 px-10 md:px-12 md:flex-row md:items-center lg:px-48">
+        <section className="min-[320px]:w-full md:w-8/12 flex flex-col justify-between items-center gap-20 mt-8 md:px-12 md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
           <div className="min-[320px]:flex flex-col justify-center items-center p-2 gap-4 md:items-start">
             <h3 className="uppercase text-corporativo text-4xl font-bold mb-3">
               Valores
