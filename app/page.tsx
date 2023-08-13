@@ -154,7 +154,7 @@ export default function Home() {
           sueño.
         </p>
         <Link href="/emprendedores">
-          <button className="text-white bg-opacity-50 border-white border-2 text-xl bg-white rounded-3xl p-4 mb-12">
+          <button className="text-white bg-opacity-20 border-white border-2 text-xl bg-white rounded-3xl p-4 mb-12">
             Saber más
           </button>
         </Link>

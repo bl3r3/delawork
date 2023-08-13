@@ -195,7 +195,7 @@ const ServicesPage = () => {
           estaremos encantados de poder ayudarte
         </p>
         <Link href="/contacto">
-          <button className="text-white bg-opacity-30 border-white border-2 text-2xl bg-white rounded-3xl p-2">
+          <button className="text-white bg-opacity-20 border-white border-2 text-2xl bg-white rounded-3xl p-2">
             Contáctanos
           </button>
         </Link>

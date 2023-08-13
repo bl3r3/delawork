@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { GoHomeFill } from "react-icons/go";
 import LogoAzul from "../public/logo-svg.svg";
 import LogoBlanco from "../public/Logos-blanco-14.svg";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type NavbarProps = {
   color: string;
@@ -14,9 +15,35 @@ type NavbarProps = {
   home?: boolean;
 };
 
+const MenuItems = [
+  {
+    label: "",
+    url: "/",
+    icon: <GoHomeFill size={30} />,
+    active: true,
+  },
+  {
+    label: "Nosotros",
+    url: "/nosotros",
+    active: false,
+  },
+  {
+    label: "Servicios",
+    url: "/servicios",
+
+    active: false,
+  },
+  {
+    label: "Contact",
+    url: "/contacto",
+    active: true,
+  },
+];
+
 const Navbar = (props: NavbarProps) => {
   const { color, textColor, home } = props;
   const [nav, setNav] = useState(false);
+  const currentRoute = usePathname();
 
   const handleNav = () => {
     setNav(!nav);
@@ -42,23 +69,45 @@ const Navbar = (props: NavbarProps) => {
               <GoHomeFill size={30} fill={textColor} />
             </Link>
           </li>
-          <li className="p-5" style={{ color: `${textColor}` }}>
+          <li
+            className={
+              currentRoute === "/nosotros" ? "font-extrabold	p-5" : " p-5"
+            }
+            style={{ color: `${textColor}` }}
+          >
             <Link href="/nosotros">Nosotros</Link>
           </li>
-          <li className="p-5" style={{ color: `${textColor}` }}>
+          <li
+            className={
+              currentRoute === "/servicios" ? "font-extrabold	p-5" : " p-5"
+            }
+            style={{ color: `${textColor}` }}
+          >
             <Link href="/servicios">Servicios</Link>
           </li>
-          <li className="p-5" style={{ color: `${textColor}` }}>
+          <li
+            className={
+              currentRoute === "/emprendedores" ? "font-extrabold	p-5" : " p-5"
+            }
+            style={{ color: `${textColor}` }}
+          >
             <Link href="/emprendedores">Emprendedores</Link>
           </li>
           <li className=" p-1 text-corporativo">
             <Link href="/contacto">
-              <button className="text-corporativo bg-white rounded-3xl border-2 border-corporativo p-3">
+              <button
+                className={
+                  currentRoute === "/contacto"
+                    ? "font-extrabold text-corporativo bg-white rounded-3xl border-2 border-corporativo p-3"
+                    : "ext-corporativo bg-white rounded-3xl border-2 border-corporativo p-3"
+                }
+              >
                 Contacto
               </button>
             </Link>
           </li>
         </ul>
+
         {/* mobile Button */}
 
         <div onClick={handleNav} className="lg:hidden block z-10">
