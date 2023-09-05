@@ -84,18 +84,21 @@ const EmprendedoresPage = () => {
             </div>
           </div>
         </section>
-        <section className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center items-center min-[1200px]:px-48 max-[1200px]:px-8 gap-16 min-[320px]:mt-6 mt-24 mb-24">
+        <section className="min-[320px]:w-full min-[320px]:flex-col  min-[320px]:p-12  w-screen h-fit sm:flex-row flex justify-center min-[1200px]:px-48 max-[1200px]:px-8 gap-16 min-[320px]:mt-6 mt-24 mb-24 md:items-start">
           <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
             <h2 className="uppercase text-corporativo  text-center min-[320px]:text-3xl md:text-3xl">
               Formación
             </h2>
             <div className="bg-corporativo h-2 border-2 border-corporativo" />
             <p className="text-left mt-6 text-base">
-              Los valores de <span className="text-corporativo">DELOWORK</span>{" "}
-              se basan en unos principios básicos, pero a la vez sumamente
-              importantes para la consecución de los objetivos, como son: el
-              respeto, la aptitud de servicio, la escucha activa, la eficacia y
-              la mejora continua, la cooperación y la sostenibilidad.
+              La formación es esencial para el crecimiento y el éxito de
+              cualquier negocio o empresa, ya que te aporta una serie de
+              herramientas tales como: mejora de habilidades y conocimientos,
+              rápida adaptación al cambio, incremento de la productividad, toma
+              de decisiones más eficiente y mayor capacidad de innovación. En
+              resumen, la formación no solo es una inversión en el crecimiento y
+              el éxito a largo plazo de un negocio, sino que también es esencial
+              para mantenerse competitivo en un entorno en constante evolución.
             </p>
           </div>
           <div className="min-[320px]:w-full flex flex-col w-4/12 gap-4">
@@ -104,11 +107,12 @@ const EmprendedoresPage = () => {
             </h2>
             <div className="bg-corporativo  h-2 border-2 border-corporativo" />
             <p className="text-left mt-6">
-              Los valores de <span className="text-corporativo">DELOWORK</span>{" "}
-              se basan en unos principios básicos, pero a la vez sumamente
-              importantes para la consecución de los objetivos, como son: el
-              respeto, la aptitud de servicio, la escucha activa, la eficacia y
-              la mejora continua, la cooperación y la sostenibilidad.
+              En cada aspecto de tu negocio, el "asesoramiento" es la clave para
+              alcanzar el éxito. En DELOWORK ofrecemos un asesoramiento completo
+              en temas contables, fiscales, laborales y de gestión empresarial.
+              Confía en nosotros para optimizar tu operativa diaria y maximizar
+              tus resultados. Únete a nuestra familia de clientes satisfechos y
+              alcanza tus objetivos con confianza.
             </p>
           </div>
         </section>
