@@ -107,12 +107,14 @@ const EmprendedoresPage = () => {
             </h2>
             <div className="bg-corporativo  h-2 border-2 border-corporativo" />
             <p className="text-left mt-6">
+              {`
               En cada aspecto de tu negocio, el "asesoramiento" es la clave para
               alcanzar el éxito. En DELOWORK ofrecemos un asesoramiento completo
               en temas contables, fiscales, laborales y de gestión empresarial.
               Confía en nosotros para optimizar tu operativa diaria y maximizar
               tus resultados. Únete a nuestra familia de clientes satisfechos y
               alcanza tus objetivos con confianza.
+              `}
             </p>
           </div>
         </section>
