@@ -51,9 +51,6 @@ const ServicesPage = () => {
             tienen propiedades de alquiler. Nuestro objetivo es asegurarnos de
             que usted obtenga el mayor rendimiento posible de sus inversiones,
             pagando al mismo tiempo la menor cantidad posible de impuestos.
-            Nuestro equipo revisará toda su información con un peine de dientes
-            finos para que podamos asegurarnos de que hasta el último dólar se
-            maximiza.
           </p>
           <p className="text-sm text-left leading-7">
             Sabemos que la temporada de impuestos puede ser estresante para
@@ -83,18 +80,32 @@ const ServicesPage = () => {
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
           <p className="text-sm text-left leading-7">
             En <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
-            creemos que la cantidad de información que recibimos (de cualquier
-            tipo) se convierte, en muchas ocasiones, en una vorágine de datos
-            difíciles de asimilar e interpretar. Por ello, ofrecemos nuestros
-            servicios a todas aquellas personas que no saben por dónde empezar
-            su proyecto (tanto personal como empresarial) y nos adaptamos a sus
-            necesidades y entorno para facilitar el flujo de comunicación con
-            los diferentes organismos públicos y privados. Para ello,
-            simplificamos el entendimiento y la comprensión de los objetivos de
-            nuestros clientes. Además, gracias a la colaboración y apoyo
-            continuo que ofrecemos, cada acción que se realiza ante ellos
-            repercute positivamente en sus objetivos.
+            siempre intentamos brindar a nuestros clientes un servicio de
+            calidad. Ofrecemos asesoramiento laboral en colaboración con una de
+            las mejores asesorías especializadas en el ámbito laboral.
           </p>
+          <p>
+            Nos encargamos de realizar todos los trámites cotidianos. Como
+            servicios más destacados te ofrecemos:
+          </p>
+          <ul className="px-10">
+            <li className="list-disc">
+              Afiliación a la Seguridad Social: Trabajadores, autónomos y
+              empresas
+            </li>
+            <li className="list-disc">Nóminas y Seguros Sociales</li>
+            <li className="list-disc">
+              Costes salariales: Análisis e informes de costes salariales
+            </li>
+            <li className="list-disc">Bajas y despidos</li>
+            <li className="list-disc">
+              Gestión de conflictos con trabajadores
+            </li>
+            <li className="list-disc">
+              Inspección de trabajo y Seguridad Social
+            </li>
+            <li className="list-disc">Pensiones y prestaciones</li>
+          </ul>
         </div>
       </section>
       <section className="w-full min-[320px]:px-4 flex flex-col justify-between items-center  gap-10 mt-8  md:flex-row md:items-center max-[1200px]:px-14 min-[1200px]:px-48">
@@ -104,25 +115,23 @@ const ServicesPage = () => {
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
           <p className="text-sm text-left leading-7">
-            Los servicios fiscales de{" "}
             <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
-            pueden ayudarle a controlar sus impuestos para que no tenga que
-            preocuparse por ellos. Ofrecemos una amplia gama de servicios, desde
-            la planificación fiscal básica hasta el servicio completo de
-            preparación y presentación de impuestos. Estamos aquí para ayudarle
-            a sacar el máximo provecho de sus impuestos con nuestro equipo de
-            expertos que saben cómo maximizar sus deducciones y minimizar su
-            responsabilidad.
+            ofrece un servicio 360° en la gestión contable de tu empresa o
+            negocio. En todo momento nos encargamos de contabilizar y controlar
+            toda la actividad económica que realices. La creación de estos
+            registros contables se convertirá en el punto de partida esencial
+            para cumplir con tus obligaciones fiscales, analizar y recibir
+            asesoramiento acerca del estado de tus activos, y obtener una
+            orientación clara sobre cómo dirigir tu empresa.
           </p>
           <p className="text-sm text-left leading-7">
-            Trabajamos con todo tipo de individuos, incluyendo aquellos que
-            trabajan por cuenta propia, son dueños de un pequeño negocio, o
-            tienen propiedades de alquiler. Nuestro objetivo es asegurarnos de
-            que usted obtenga el mayor rendimiento posible de sus inversiones,
-            pagando al mismo tiempo la menor cantidad posible de impuestos.
-            Nuestro equipo revisará toda su información con un peine de dientes
-            finos para que podamos asegurarnos de que hasta el último dólar se
-            maximiza.
+            Gracias a un amplio dominio de todo el proceso contable y una
+            evaluación exhaustiva de las transacciones y conexiones diarias
+            dentro de las operaciones de nuestros clientes, examinamos
+            minuciosamente el estado financiero de la empresa y anticipamos
+            posibles desviaciones con el objetivo de rectificar, progresar y
+            mejorar las perspectivas futuras de tu negocio, brindando una base
+            sólida para alcanzar el éxito.
           </p>
         </div>
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
@@ -166,15 +175,15 @@ const ServicesPage = () => {
           </h3>
           <div className="bg-corporativo w-full h-2 border-2 border-corporativo" />
           <p className="text-sm text-left leading-7">
-            Los servicios fiscales de{" "}
-            <span className="text-corporativo font-semibold">DELOWORK</span>{" "}
-            pueden ayudarle a controlar sus impuestos para que no tenga que
-            preocuparse por ellos. Ofrecemos una amplia gama de servicios, desde
-            la planificación fiscal básica hasta el servicio completo de
-            preparación y presentación de impuestos. Estamos aquí para ayudarle
-            a sacar el máximo provecho de sus impuestos con nuestro equipo de
-            expertos que saben cómo maximizar sus deducciones y minimizar su
-            responsabilidad.
+            El certificado digital es un sistema que les permite verificar tu
+            identidad de forma fiable y segura a los diferentes organismos
+            públicos a la hora de realizar y/o firmar documentos electrónicos
+            con validez legal, evitando la necesidad de impresiones, envíos
+            físicos y quizás largas filas u horas de espera al otro lado del
+            teléfono. Ahorra tiempo y contribuye al cuidado del medio ambiente
+            con esta alternativa sustentable. Con el certificado digital, tus
+            datos personales y transacciones estarán protegidos mediante
+            robustos protocolos de encriptación.
           </p>
         </div>
         <div className="min-[320px]:w-full flex flex-col justify-center items-center p-2  md:w-4/12">
