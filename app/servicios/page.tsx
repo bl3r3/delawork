@@ -84,11 +84,11 @@ const ServicesPage = () => {
             calidad. Ofrecemos asesoramiento laboral en colaboración con una de
             las mejores asesorías especializadas en el ámbito laboral.
           </p>
-          <p>
+          <p className="text-sm text-left leading-7">
             Nos encargamos de realizar todos los trámites cotidianos. Como
             servicios más destacados te ofrecemos:
           </p>
-          <ul className="px-10">
+          <ul className="px-10 text-sm text-left leading-7">
             <li className="list-disc">
               Afiliación a la Seguridad Social: Trabajadores, autónomos y
               empresas
