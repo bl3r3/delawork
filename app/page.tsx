@@ -110,7 +110,7 @@ export default function Home() {
               </h5>
             </Link>
           </div>
-          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 md:mt-[30px]">
+          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 ">
             <Link href="/servicios">
               <Image src={GestionImg} alt="servicios de gestion delowork" />
               <h5 className="text-corporativo text-2xl min-[320px]:text-xl font-semibold text-center">
@@ -118,7 +118,7 @@ export default function Home() {
               </h5>
             </Link>
           </div>
-          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 md:mt-[30px]">
+          <div className="flex min-[320px]:w-full sm:w-6/12 flex-col md:w-3/12 items-center justify-center gap-4 p-4 ">
             <Link href="/servicios">
               <Image
                 src={CertificadoImg}
