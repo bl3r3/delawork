@@ -14,6 +14,8 @@ export const FormComponent = (props: FormProps) => {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [termsAccepted, setTermsAccepted] = useState(false); // Estado para el checkbox
+  const [isSubmitting, setIsSubmitting] = useState(false); // Estado para el mensaje de "Enviando..."
   const [responseMessage, setResponseMessage] = useState({
     isSuccessful: true,
     message: "",
@@ -22,25 +24,44 @@ export const FormComponent = (props: FormProps) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
+    if (!termsAccepted) {
+      setResponseMessage({
+        isSuccessful: false,
+        message: "Debe aceptar los términos y condiciones.",
+      });
+      return;
+    }
+
+    setIsSubmitting(true); // Activar estado de "Enviando..."
+
     try {
       const req = await sendEmail(name, email, phone, subject, message);
-      if (req.status === 250) {
+
+      // Verifica si el envío fue exitoso
+      if (req.status === 200) {
         setResponseMessage({
           isSuccessful: true,
-          message: "Thank you for your message.",
+          message: "Gracias por su mensaje.",
+        });
+      } else {
+        setResponseMessage({
+          isSuccessful: false,
+          message: "Hubo un error al enviar su mensaje. Intente nuevamente.",
         });
       }
     } catch (e) {
       console.log(e);
       setResponseMessage({
         isSuccessful: false,
-        message: "Su mensaje ha sido enviado correctamente.",
+        message: "Hubo un error al enviar su mensaje.",
       });
+    } finally {
+      setIsSubmitting(false); // Desactivar el estado de "Enviando..."
     }
   };
 
   return (
-    <form className="w-full min-[320px]:px-4  mb-24">
+    <form className="w-full min-[320px]:px-4 mb-24">
       <div className="grid gap-6 mb-6 md:grid-cols-2">
         <div className="flex flex-col gap-6 mt-9">
           <input
@@ -50,7 +71,7 @@ export const FormComponent = (props: FormProps) => {
             onChange={(e) => {
               setName(e.target.value);
             }}
-            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5  dark:placeholder-gray-400   placeholder-corporativo"
+            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5 dark:placeholder-gray-400 placeholder-corporativo"
             placeholder="Nombre y Apellidos*"
             required
           />
@@ -61,8 +82,8 @@ export const FormComponent = (props: FormProps) => {
             onChange={(e) => {
               setPhone(e.target.value);
             }}
-            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5   placeholder-corporativo"
-            placeholder="Telefono de contacto*"
+            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5 placeholder-corporativo"
+            placeholder="Teléfono de contacto*"
             required
           />
           <input
@@ -72,8 +93,8 @@ export const FormComponent = (props: FormProps) => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5   placeholder-corporativo"
-            placeholder="Correo electronico*"
+            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5 placeholder-corporativo"
+            placeholder="Correo electrónico*"
             required
           />
         </div>
@@ -89,27 +110,27 @@ export const FormComponent = (props: FormProps) => {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5  placeholder-corporativo"
+            className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5 placeholder-corporativo"
             placeholder="Servicios*"
           >
             {textArea ? (
               <>
-                <option selected className="text-corporativo" value={"none"}>
-                  -Por favor, elige un opción-
+                <option className="text-corporativo" value={"none"}>
+                  -Por favor, elige una opción-
                 </option>
                 <option value="Formacion">Formación</option>
                 <option value="Asesoramiento">Asesoramiento</option>
               </>
             ) : (
               <>
-                <option selected className="text-corporativo" value={"none"}>
-                  -Por favor, elige un opción-
+                <option className="text-corporativo" value={"none"}>
+                  -Por favor, elige una opción-
                 </option>
 
                 <option value="Fiscal">Fiscal</option>
                 <option value="Laboral">Laboral</option>
                 <option value="Contabilidad">Contabilidad</option>
-                <option value="Gestion_Empresarial">Gestion Empresarial</option>
+                <option value="Gestion_Empresarial">Gestión Empresarial</option>
                 <option value="Certificados_digitales">
                   Certificados Digitales
                 </option>
@@ -125,10 +146,24 @@ export const FormComponent = (props: FormProps) => {
                 setMessage(e.target.value);
               }}
               rows={4}
-              className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5  placeholder-corporativo"
+              className="bg-withe border border-corporativo text-corporativo text-sm rounded-lg focus:ring-corporativo focus:border-coporativo block w-full p-2.5 placeholder-corporativo"
               placeholder="Mensaje"
             ></textarea>
           )}
+
+          <div className="mt-4">
+            <input
+              type="checkbox"
+              id="terms"
+              onChange={(e) => setTermsAccepted(e.target.checked)}
+            />
+            <label htmlFor="terms" className="ml-2 text-sm text-corporativo">
+              He leído y estoy de acuerdo con la{" "}
+              <a href="/politicas" className="underline">
+                política de privacidad
+              </a>
+            </label>
+          </div>
 
           <div className="w-full flex justify-end">
             <button
@@ -137,13 +172,31 @@ export const FormComponent = (props: FormProps) => {
               }}
               type="submit"
               className="text-corporativo bg-white hover:bg-corporativo hover:text-white focus:ring-4 focus:outline-none  focus:ring-blue-300 font-medium rounded-3xl text-sm w-full sm:w-auto px-5 py-2.5 text-center border border-corporativo"
+              disabled={isSubmitting} // Deshabilitar botón mientras se envía
             >
-              Enviar
+              {isSubmitting ? "Enviando..." : "Enviar"}
             </button>
           </div>
-          {!responseMessage.isSuccessful && (
-            <div className="w-full flex justify-end">
-              <p className="text-green  text-sm">{responseMessage.message}</p>
+
+          {/* Mostrar el mensaje de estado */}
+          {isSubmitting && (
+            <div className="w-full flex justify-end mt-2">
+              <p className="text-blue-500 text-sm">Enviando mensaje...</p>
+            </div>
+          )}
+
+          {/* Mostrar el mensaje de éxito o error */}
+          {responseMessage.message && !isSubmitting && (
+            <div className="w-full flex justify-end mt-2">
+              <p
+                className={`text-sm ${
+                  responseMessage.isSuccessful
+                    ? "text-green-500"
+                    : "text-red-500"
+                }`}
+              >
+                {responseMessage.message}
+              </p>
             </div>
           )}
         </div>

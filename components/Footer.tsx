@@ -10,12 +10,18 @@ const Footer = () => {
     <footer className="bg-corporativo px-4 ">
       <div className="mx-auto w-full max-w-screen-xl px-6 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6">
+          <div className="mb-6 flex flex-col gap-2">
             <a
               href="/"
               className="flex items-center min-[320px]:w-full min-[320px]:justify-center"
             >
-              <Image src={LogoBlanco} alt="FlowBite Logo" />
+              <Image src={LogoBlanco} alt="Delowork Logo" />
+            </a>
+            <a href="/avisolegal" className="text-white cursor-pointer">
+              Aviso Legal
+            </a>
+            <a href="/politicas" className="text-white cursor-pointer">
+              Politicas de Privacidad
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 min-[320px]:grid-cols-3 min-[320px]:gap-4 min-[320px]:text-center md:text-sm md:text-start">

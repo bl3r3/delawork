@@ -1,3 +1,4 @@
+import CookieModal from "../components/CookieModal";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.className} w-screen overflow-x-hidden`}>
         {children}
+        <CookieModal />
       </body>
     </html>
   );
